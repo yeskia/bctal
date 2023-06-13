@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<!-- 유튜브 링크, 이미지 삽입 부분 안함 --><!--resultMessege 변수 오타 감안 -->
+<!-- 4강 17:10 퍼센트 만들기 -->
+<!--			<div class="collapse navbar-collapse" id="navbarNav"> &	<a class="nav-link" href="#"> </a> 아래 부분 홈버튼 등 삭제 -->
+<html>
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+			integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+			crossorigin="anonymous"
+		/>
+
+		<title>Hello, world!</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light nav-distance">
+			<a class="navbar-brand" href="#">북청사자놀음 for Fun</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarNav"
+				aria-controls="navbarNav"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a href="https://url.kr/ikhul1" class="youtube-link" target="_blank"
+							>I 국가무형문화재 북청사자놀음 I</a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled"> </a>
+					</li>
+					<li class="nav-item">
+						<a href="http://lionmp.co.kr/" class="youtube-link" target="_blank"
+							>I 북청사자놀음 보존회 I</a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled"> </a>
+					</li>
+					<li class="nav-item">
+						<a href="https://bcar.modoo.at/?link=eupw2r2k" class="youtube-link" target="_blank"
+							>I 북청사자탈 AR필터 I</a
+						>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<section class="section">
+			<h1 class="title">나와 닮은 북청사자탈</h1>
+			<h2 class="subtitle">나는 어떤 탈과 닮았을까?🎭</h2>
+		</section>
+		<section class="youtube">
+			<div class="container mt-5 youtube-cover d-flex flex-row-reverse">
+				<!--<a href="https://url.kr/ikhul1" class="youtube-link" target="_blank">I 국가무형문화재 북청사자놀음 I</a>
+				<a href="http://lionmp.co.kr/" class="youtube-link" target="_blank">I 북청사자놀음 보존회 I</a>-->
+				<!--<a href="" class="youtube-link">⠀ I⠀ 국가무형문화재 북청사자놀음⠀ I⠀ </a-->
+				<img src="" alt="" class="youtube-icon" />
+			</div>
+		</section>
+
+		<div></div>
+		<script
+			class="jsbin"
+			src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
+		></script>
+		<div class="container file-upload">
+			<div class="image-upload-wrap" style="display: block; margin: 0 auto;">
+				<input
+					class="file-upload-input"
+					type="file"
+					onchange="readURL(this);"
+					accept="image/*"
+				/>
+				<div class="drag-text">
+					<h3 class="upload-text">얼굴 사진을 업로드 하세요!</h3>
+				</div>
+			</div>
+			<div class="file-upload-content">
+				<img class="file-upload-image" id="face-image" src="#" alt="your image" />
+				<p class="result-message"></p>
+				<div id="label-container"></div>
+				<div class="image-title-wrap">
+					<button type="button" onclick="removeUpload()" class="remove-image">
+						Remove <span class="image-title">Uploaded Image</span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div id="label-container"></div>
+		<div id="disqus_thread"></div>
+		<script>
+			/**
+			 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+			 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+			/*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+			(function () {
+				// DON'T EDIT BELOW THIS LINE
+				var d = document,
+					s = d.createElement('script');
+				s.src = 'https://bcsjne.disqus.com/embed.js';
+				s.setAttribute('data-timestamp', +new Date());
+				(d.head || d.body).appendChild(s);
+			})();
+		</script>
+		<noscript
+			>Please enable JavaScript to view the
+			<a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript
+		>
+		<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+		<script>
+			function readURL(input) {
+				if (input.files && input.files[0]) {
+					var reader = new FileReader();
+
+					reader.onload = function (e) {
+						$('.image-upload-wrap').hide();
+
+						$('.file-upload-image').attr('src', e.target.result);
+						$('.file-upload-content').show();
+
+						$('.image-title').html(input.files[0].name);
+					};
+
+					reader.readAsDataURL(input.files[0]);
+					init().then(function () {
+						console.log('hello');
+						predict();
+					});
+				} else {
+					removeUpload();
+				}
+			}
+
+			function removeUpload() {
+				$('.file-upload-input').replaceWith($('.file-upload-input').clone());
+				$('.file-upload-content').hide();
+				$('.image-upload-wrap').show();
+			}
+			$('.image-upload-wrap').bind('dragover', function () {
+				$('.image-upload-wrap').addClass('image-dropping');
+			});
+			$('.image-upload-wrap').bind('dragleave', function () {
+				$('.image-upload-wrap').removeClass('image-dropping');
+			});
+		</script>
+		<script type="text/javascript">
+			// More API functions here:
+			// https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
+
+			// the link to your model provided by Teachable Machine export panel
+			const URL = 'https://teachablemachine.withgoogle.com/models/3xaqOZavj/';
+
+			let model, webcam, labelContainer, maxPredictions;
+
+			// Load the image model and setup the webcam
+			async function init() {
+				const modelURL = URL + 'model.json';
+				const metadataURL = URL + 'metadata.json';
+
+				// load the model and metadata
+				// Refer to tmImage.loadFromFiles() in the API to support files from a file picker
+				// or files from your local hard drive
+				// Note: the pose library adds "tmImage" object to your window (window.tmImage)
+				model = await tmImage.load(modelURL, metadataURL);
+				maxPredictions = model.getTotalClasses();
+				labelContainer = document.getElementById('label-container');
+				for (let i = 0; i < maxPredictions; i++) {
+					// and class labels
+					labelContainer.appendChild(document.createElement('div'));
+				}
+			}
+
+			// run the webcam image through the image model
+			async function predict() {
+				// predict can take in an image, video or canvas html element
+				var image = document.getElementById('face-image');
+				const prediction = await model.predict(image, false);
+				prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+				console.log(prediction[0].className);
+				var resultMessege;
+				switch (prediction[0].className) {
+					case 'saja':
+						resultMessege =
+							'당-당, 궁따라궁, 당-당, 궁따라궁! 흥겨운 음악 소리와 함께 등장하는 사자탈을 닮았군요!';
+						break;
+					case 'yangban':
+						resultMessege =
+							'꼭쇠야–. 양반을 정하게 모시려무나. 진지한 양반탈을 닮았군요!';
+						break;
+					case 'kkoksae':
+						resultMessege = '양반! 꼭쇠 수염하고 바꿉시다~ 유쾌한 꼭쇠탈을 닮았군요!';
+						break;
+					default:
+						resultMessege = '알수없음';
+				}
+				$('.result-message').html(resultMessege);
+				for (let i = 0; i < maxPredictions; i++) {
+					const classPrediction =
+						prediction[i].className + ': ' + prediction[i].probability.toFixed(2);
+					labelContainer.childNodes[i].innerHTML = classPrediction;
+				}
+			}
+		</script>
+	</body>
+</html>

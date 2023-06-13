@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'HS-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/HS-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	/* 유튜브 23:13 이미지 다운 받기 앞쪽 */
+	/* 유튜브 21:16 이미지 다운 받기 앞쪽 */
+	font-family: 'HS-Regular';
+	background-color: #FBFBEF;
+}
+.file-upload {
+	padding: 7% 3%;
+	border-radius: 10px;
+	border: solid 1.5px #FBFBEF;
+	background-color: #FBFBEF; 
+}
+
+.file-upload-content {
+	display: none;
+	text-align: center;
+}
+.file-upload-input {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	opacity: 0;
+	cursor: pointer;
+}
+.image-upload-wrap { 
+	border: 1.5px dashed #35465d;
+	position: relative;
+	width: 65%; 
+	margin:0 auto;
+	object-fit: contain;
+	border-radius: 1.5px;
+	background-color: #FBFBEF;
+}
+.image-dropping,
+.image-upload-wrap:hover {
+	background-color: #35465d;
+	border: 1.5px dashed #35465d;
+	object-fit: contain;
+	border-radius: 10px;
+	border: dashed 1.5px
+		#35465d;
+	background-color:
+		#ffffff;
+}
+.image-title-wrap {
+	padding: 0 15px 15px 15px;
+	color: #222;
+}
+.drag-text {
+	text-align: center;
+	height: 200%
+}
+.drag-text h3 {
+	width: 50%;
+	font-weight: 100;
+	text-transform: uppercase;
+	color: #15824b;
+	font-family: 'HS-Regular';
+	font-size: 2rem;
+	line-height: 1.53;
+	text-align: center;
+	color: #35465d;
+	margin: 0 auto;
+}
+.upload-text{
+	width: 50%;
+	font-weight: 100;
+	text-transform: uppercase;
+	color: #15824b;
+	font-family: 'HS-Regular';
+	font-size: 1.5rem;
+	line-height: 1.53;
+	text-align: center;
+	color: #35465d;
+	margin: 0 auto;
+}
+.file-upload-image {
+	max-height: 200px;
+	max-width: 200px;
+	margin: auto;
+	padding: 20px;
+}
+.remove-image {
+	width: 200px;
+	margin: 0;
+	color: #fff;
+	background: #cd4535;
+	border: none;
+	padding: 10px;
+	border-radius: 4px;
+	border-bottom: 4px solid #b02818;
+	transition: all 0.2s ease;
+	outline: none;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.remove-image:hover {
+	background: #c13b2a;
+	color: #ffffff;
+	transition: all 0.2s ease;
+	cursor: pointer;
+}
+.remove-image:active {
+	border: 0;
+	transition: all 0.2s ease;
+}
+.nav-distance {
+	padding: 2.1% 7.7%;
+}
+.navbar-light .navbar-brand {
+	font-family: 'HS-Regular';
+	font-style: normal;
+	font-weight: 400;
+	line-height: 69px;
+	/* or 164% */
+
+	display: flex;
+	align-items: center;
+
+	color: #8a0808;
+}
+.navbar-light .navbar-toggler {
+	border-color: #fbfbef;
+}
+.section {
+	margin-top: 90px;
+	margin-bottom: 50px;
+	/* bottom추가함, top은 100에서 90으로 줄임 */
+}
+.title {
+	/* width에서 px 없애서 정렬함 */
+	width: 547;
+	height: 50px;
+
+	font-family: 'HS-Regular';
+	line-height: 1.67;
+	/* identical to box height, or 165% */
+
+	text-align: center;
+
+	color: #35465d;
+}
+.subtitle {
+	/* widith에서 px없애서 정렬함 */
+	width: 368;
+	height: 31px;
+
+	font-family: 'HS-Regular';
+	font-style: normal;
+	line-height: 1.53;
+
+	/* identical to box height, or 152% */
+
+	text-align: center;
+
+	color: #35465d;
+}
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+	html {
+		font-size: 10px;
+	}
+	.navbar-brand {
+		font-size: 2rem;
+	}
+}
+
+.youtube-link {
+	width: 306px;
+	height: 50px;
+
+	font-family: 'HS-Regular';
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.71;
+
+	text-align: center;
+
+	color: #28a745;
+}
