@@ -165,6 +165,9 @@ body {
 
 	color: #35465d;
 }
+.result-message {
+    font-size: 2rem;
+}
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 600px) {
 	html {
